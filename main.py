@@ -40,15 +40,15 @@ bot = Client(
 
 bot_token=Config.BOT_TOKEN
 bot1 = telegram.Bot(token=bot_token)
-channel = f'@HxBots'
-owner = f'@Kirodewal'
-pdf = f'@TxT_DLBot.pdf'
-video = f'@TxT_DLBot.mp4'
-mkv = f'@TxT_DLBot.mkv'
+channel = f'@Matiz_Techz'
+owner = f'@Matiz_Owner'
+pdf = f'@Matiz_Techz.pdf'
+video = f'@Matiz_Techz.mp4'
+mkv = f'@Matiz_Techz.mkv'
 
 @bot.on_message(filters.command(["help"]))
 async def help_handler(bot: Client, m: Message):
-    await m.reply_text(f"Hello Im TxT File Downloader\n\n**Steps To Use Bot:**\n **1:** Send /up_vid to Upload Videos in Streamable Formate & then Send Your .txt file.\n **2:** Now Send From Where You Want To    Download Initial is 0 .\n **3:** Now Send Your File Name or Use `de` For.  Use Default File Name.\n **4:** Now Send Resolution In Which Quality    You Want.\n **5:** Now Send Custom Thum URL or    Send `no` to Use Defalut Thumbnail.\n **6:** Now Wait Bot will Download & Upload Your Videos.\n\n**Bot made by {owner} & Updated By {channel} **")                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+    await m.reply_text(f"Hello Im TxT File Downloader\n\n**Steps To Use Bot:**\n **1:** Send /up_vid to Upload Videos in Streamable Formate & then Send Your .txt file.\n **2:** Now Send From Where You Want To Download Initial is 0 .\n **3:** Now Send Your File Name or Use `de` For.  Use Default File Name.\n **4:** Now Send Resolution In Which Quality You Want.\n **5:** Now Send Custom Thum URL From Telegraph or Send `no` to Use Defalut Thumbnail.\n **6:** Now Wait Bot will Download & Upload Your Videos.\n\n**Bot made by @Matiz_Techz**")                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
 @bot.on_message(filters.command(["cancel"]))
 async def cancel(_, m):
@@ -65,7 +65,7 @@ async def restart_handler(_, m):
 
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text("**Hi!, I'm PyroBot. I Can Download All Links In A Txt File & Send Them To You.\n\nUse /help To Get Some Help 😉\n\n Use /up_vid Command to Upload Videos in Streamable Formate & /up_dov to Upload In Document Formate!!!**")
+    editable = await m.reply_text("**Hi!, I'm PyroBot. I Can Download All Links In A Txt File & Send Them To You.\n\nUse /help To Get Some Help 😉\n\n Use /up_vid Command to Upload Videos in Streamable Formate & /up_doc to Upload In Document Formate!!!**")
 
 
 @bot.on_message(filters.command(["up_vid"]))
@@ -91,7 +91,7 @@ async def account_login(bot: Client, m: Message):
         os.remove(x)
         return
 
-    editable = await m.reply_text(f"Total links found are **{len(links)}**\n\nSend From where you want to download initial is **0**")
+    editable = await m.reply_text(f"𝕋ᴏᴛᴀʟ ʟɪɴᴋ𝕤 ғᴏᴜɴᴅ ᴀʀᴇ🔗🔗 **{len(links)}**\n\n𝕊ᴇɴᴅ 𝔽ʀᴏᴍ ᴡʜᴇʀᴇ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ɪɴɪᴛɪᴀʟ ɪ𝕤 **0**")
     input1: Message = await bot.listen(editable.chat.id)
     raw_text = input1.text
 
@@ -107,11 +107,11 @@ async def account_login(bot: Client, m: Message):
         CR = raw_text0
 
     
-    await m.reply_text("**Enter Resolution \nExamples: __480 = SD Quality\n             720 = HD Quality\n             1080 = FHD Quality__**")
+    await m.reply_text("**Enter Resolution 📸**\nEx: __480 = SD Quality\n    720 = HD Quality\n    1080 = FHD Quality__")
     input2: Message = await bot.listen(editable.chat.id)
     raw_text2 = input2.text
         
-    editable4= await m.reply_text("Now send the **Thumb url**\nEg : https://telegra.ph/file/d9e24878bd4abyhga05049a1.jpg\n\nElse Send **No**")
+    editable4= await m.reply_text("Now send the **Thumb url**\nEg » https://telegra.ph/file/1bf523c4b51530e57e84d.jpg\n\nOr if don't want thumbnail send = no")
     input6 = message = await bot.listen(editable.chat.id)
     raw_text6 = input6.text
 
@@ -321,7 +321,7 @@ async def account_login(bot: Client, m: Message):
 
 
             try:
-                Show = f"**Downloading:-**\n\n**Name »** `{name}`\n**Quality »** `{raw_text2}`\n\n**Url »** `{url}`\n\n"
+                Show = f"**⥥ 🄳🄾🅆🄽🄻🄾🄰🄳🄸🄽🄶⬇️⬇️ ⥥**\n\n**💾 Name »** `{name}`\n**💠 Quality »** `{raw_text2}`\n\n**🖇 Url »** `{url}`"
                 prog = await m.reply_text(Show)
                 cc = f'**File Name »** {name1} {video}\n**Quality »** {raw_text2}'
                 cc1 =f'**File No. »** {str(count).zfill(3)}\n**File Name »** {name1} {pdf}\n'
@@ -403,7 +403,7 @@ async def account_login(bot: Client, m: Message):
         os.remove(x)
         return
 
-    editable = await m.reply_text(f"Total links found are **{len(links)}**\n\nSend From where you want to download initial is **0**")
+    editable = await m.reply_text(f"𝕋ᴏᴛᴀʟ ʟɪɴᴋ𝕤 ғᴏᴜɴᴅ ᴀʀᴇ🔗🔗 **{len(links)}**\n\n𝕊ᴇɴᴅ 𝔽ʀᴏᴍ ᴡʜᴇʀᴇ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ɪɴɪᴛɪᴀʟ ɪ𝕤 **0**")
     input1: Message = await bot.listen(editable.chat.id)
     raw_text = input1.text
 
@@ -418,11 +418,11 @@ async def account_login(bot: Client, m: Message):
     input0: Message = await bot.listen(editable.chat.id)
     raw_text0 = input0.text
     
-    await m.reply_text("**Enter Resolution \nExamples: __480 = SD Quality\n             720 = HD Quality\n             1080 = FHD Quality__**")
+    await m.reply_text("**Enter Resolution \nEnter Resolution 📸**\nEx: __480 = SD Quality\n   720 = HD Quality\n   1080 = FHD Quality__")
     input2: Message = await bot.listen(editable.chat.id)
     raw_text2 = input2.text
 
-    editable4= await m.reply_text("Now send the **Thumb url**\nEg : https://telegra.ph/file/d9e24878bd4abyhga05049a1.jpg\n\nElse Send **No**")
+    editable4= await m.reply_text("Now send the **Thumb url**\nEg » https://telegra.ph/file/1bf523c4b51530e57e84d.jpg\n\nOr if don't want thumbnail send = no")
     input6 = message = await bot.listen(editable.chat.id)
     raw_text6 = input6.text
 
@@ -486,7 +486,7 @@ async def account_login(bot: Client, m: Message):
             
             
             name = f'{name1}'    
-            Show = f"**Downloading:-**\n\n**Name :-** `{name} {video}`\n\n**Url :-** `{url1}`\n\n"
+            Show = f"**⥥ 🄳🄾🅆🄽🄻🄾🄰🄳🄸🄽🄶⬇️⬇️ ⥥**\n\n**💾 Name »** `{name}`\n**💠 Quality »** `{raw_text2}`\n\n**🖇 Url »** `{url}`"
             prog = await m.reply_text(Show)
             cc = f'**Title »** {name1}.mkv {video}\n**Batch »** {raw_text0}\n**Index »** {str(count).zfill(3)}'
             if "pdf" in url:
