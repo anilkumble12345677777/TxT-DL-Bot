@@ -107,7 +107,7 @@ async def account_login(bot: Client, m: Message):
         CR = raw_text0
 
     
-    await m.reply_text("**Enter Resolution Pls 📸**\n■ Ex: __480 = SD Quality\n      720 = HD Quality\n      1080 = FHD Quality__")
+    await m.reply_text("**Enter Resolution Pls 📸**\n■ Ex: __**480** = SD Quality\n        **720** = HD Quality\n        **1080** = FHD Quality__")
     input2: Message = await bot.listen(editable.chat.id)
     raw_text2 = input2.text
         
@@ -418,7 +418,7 @@ async def account_login(bot: Client, m: Message):
     input0: Message = await bot.listen(editable.chat.id)
     raw_text0 = input0.text
     
-    await m.reply_text("**Enter Resolution \nEnter Resolution 📸**\nEx: __480 = SD Quality\n   720 = HD Quality\n   1080 = FHD Quality__")
+    await m.reply_text("**Enter Resolution \nEnter Resolution Pls 📸**\n■ Ex: __**480** = SD Quality\n        **720** = HD Quality\n        **1080** = FHD Quality__")
     input2: Message = await bot.listen(editable.chat.id)
     raw_text2 = input2.text
 
