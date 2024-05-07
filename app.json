@@ -5,7 +5,7 @@
 
     "description": "A Modular telegram bot.",
 
-    "repository": "https://github.com/Ashrafmdmatin41/TxT-DL-Bot",
+    "repository": "https://github.com/Rajmaterbot/TxT-DL-Bot",
     "buildpacks":[
         {
             "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
@@ -31,7 +31,7 @@
 
         "BOT_TOKEN": {
 
-      "value":"6824877465:AAEVT3DeNAJDvIrKkH8u3TUu7jjx9YN8lWI",
+      "value":"7126892855:AAGg__RShjmnJCmr501S3Y24hOVmj8dGdMo",
 
             "description": "Your Bot token from @Botfather"
 
@@ -39,7 +39,7 @@
 
         "API_ID": {
 
-      "value":"16712603",
+      "value":"28308147",
 
             "description": "Your API_ID from https://my.telegram.org/apps"
 
@@ -47,7 +47,7 @@
 
         "API_HASH": {
 
-      "value":"62e7bdb76c9d12f90021a5a90bb2402f",
+      "value":"8240cdc945560ccd108b6ff2925ced5e",
 
             "description": "Your API_HASH from https://my.telegram.org/apps"
 
@@ -57,7 +57,7 @@
 
       "description": "Owner Id for use of /restart command",
 
-      "value":"1227089641",
+      "value":"1227089641,5618212564",
 
       "required": false
 
