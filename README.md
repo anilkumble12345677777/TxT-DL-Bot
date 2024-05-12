@@ -22,7 +22,7 @@
 
 ### Deploy To Heroku
 
-<a href="https://heroku.com/deploy?template=https://github.com/Rajmaterbot/TxT-DL-Bot">
+<a href="https://heroku.com/deploy?template=https://github.com/anilkumble12345677777/TxT-DL-Bot">
      <img height="30px" src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku">
   </a>
 
